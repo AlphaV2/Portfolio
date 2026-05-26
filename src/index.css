@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-portfolio-bg: #0B1117;
+  --color-portfolio-white: #F8FAFC;
+  --color-portfolio-primary: #DDE7F2;
+  --color-portfolio-secondary: #8B98A8;
+  --color-portfolio-border: rgba(255, 255, 255, 0.1);
+  --color-portfolio-blue: #4E8BFF;
+  --color-portfolio-orange: #F97316;
+  --color-portfolio-asphalt: #111820;
+  --color-portfolio-green: #34D399;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(255, 255, 255, 0.04), transparent 28%),
+      radial-gradient(circle at top right, rgba(52, 211, 153, 0.06), transparent 26%),
+      linear-gradient(180deg, #05070A 0%, #070B0F 52%, #040507 100%);
+    background-color: var(--color-portfolio-bg);
+    color: var(--color-portfolio-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--color-portfolio-blue);
+    color: var(--color-portfolio-white);
+  }
+}
+
+/* Custom scrollbar aesthetics */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.34);
+}
+
+/* Custom animations and glowing assets */
+@keyframes ambient-pulse {
+  0%, 100% {
+    transform: scale(1) translate(0px, 0px) rotate(0deg);
+    opacity: 0.15;
+  }
+  33% {
+    transform: scale(1.1) translate(30px, -50px) rotate(120deg);
+    opacity: 0.25;
+  }
+  66% {
+    transform: scale(0.9) translate(-20px, 20px) rotate(240deg);
+    opacity: 0.15;
+  }
+}
+
+.animate-ambient-orbit-1 {
+  animation: ambient-pulse 20s infinite ease-in-out;
+}
+
+.animate-ambient-orbit-2 {
+  animation: ambient-pulse 25s infinite ease-in-out reverse;
+}
