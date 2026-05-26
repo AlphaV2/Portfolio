@@ -9,7 +9,7 @@ const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(() => {
   return {
-    base: './',
+    base: '/Portfolio/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

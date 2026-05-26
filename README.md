@@ -1,16 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/87fc0a44-bfc6-4eba-afd3-c310b113edaf
-
-## Run Locally
-
-**Prerequisites:**  Node.js
 # Hemanth Goshika Portfolio
 
 A personal portfolio built with React, Vite, TypeScript, and Tailwind CSS.
@@ -68,28 +55,31 @@ npm run preview
 
 ## GitHub Pages Deployment
 
-This repo is configured for GitHub Pages with a relative Vite base path and a GitHub Actions workflow.
+This repo is configured for GitHub Pages with a Vite base path and a GitHub Actions workflow.
 
-Build locally:
+Workflow file:
 
-```bash
-npm run deploy
-```
+- [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
 
-The workflow at [.github/workflows/pages.yml](.github/workflows/pages.yml) automatically publishes the `dist` folder to GitHub Pages on pushes to `updates` or `main`.
+Live site:
 
-If you want to preview the built site locally, use:
+- https://alphav2.github.io/Portfolio/
 
-```bash
-npm run preview
-```
+Set GitHub Pages source to GitHub Actions in repository settings.
+
+Push flow:
+
+- `git add .`
+- `git commit -m "update"`
+- `git push origin main`
+
+GitHub Actions builds and deploys automatically.
 
 ## Available Scripts
 
 - `npm run dev` - start the Vite development server
 - `npm run build` - build the app for production
 - `npm run preview` - preview the production build locally
-- `npm run deploy` - build the app locally
 - `npm run lint` - run TypeScript type checking
 - `npm run clean` - remove build output
 
@@ -117,5 +107,5 @@ public/
 ## Notes
 
 - The portfolio data and copy live in `src/data.ts`.
-- GitHub Pages build settings are handled in `vite.config.ts`, `package.json`, and [.github/workflows/pages.yml](.github/workflows/pages.yml).
-- If you update assets or routes, rebuild before deploying so the published `dist` stays current.
+- GitHub Pages build settings are handled in `vite.config.ts`, `package.json`, and [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+- If you update assets or routes, GitHub Actions will rebuild and publish on the next push to `main`.
