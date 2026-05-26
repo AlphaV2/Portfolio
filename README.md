@@ -1,20 +1,80 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Hemanth Goshika — Portfolio
 
-# Run and deploy your AI Studio app
+Interactive portfolio focused on clean UI, motion, systems, and responsive experience design.
 
-This contains everything you need to run your app locally.
+Built with a minimal SaaS-style interface using asphalt blacks, soft whites, light blue highlights, and subtle orange accents.
 
-View your app in AI Studio: https://ai.studio/apps/87fc0a44-bfc6-4eba-afd3-c310b113edaf
+---
 
-## Run Locally
+## Preview
 
-**Prerequisites:**  Node.js
+```text
+Interactive Layout → Ambient Panel → Contribution Grid → Projects → Contact
+```
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Features
+
+- Interactive column-based layout
+- Smooth hover and motion interactions
+- Ambient terminal/activity panel
+- Cursor-reactive contribution heat map
+- Responsive desktop and mobile layouts
+- Minimal SaaS-inspired visual system
+
+---
+
+## Stack
+
+- React 19
+- TypeScript
+- Vite 6
+- Tailwind CSS 4
+- lucide-react
+
+---
+
+## Sections
+
+- About
+- Skills
+- Experience
+- Projects
+- Contact
+
+---
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── AmbientCanvas.tsx
+│   ├── InteractiveColumns.tsx
+│   ├── ProjectSandbox.tsx
+│   └── Sidebar.tsx
+│
+├── data.ts
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+---
+
+## Design Direction
+
+- Asphalt black backgrounds
+- Soft white panels
+- Light blue interaction highlights
+- Orange CTA accents
+- Motion-driven interactions
+- Minimal typography
+- Clean spacing and hierarchy
+
+---
+
+## Author
+
+Hemanth Goshika
