@@ -49,7 +49,7 @@ export const skillsData: SkillsGroup[] = [
 
 export const experiencesData: Experience[] = [
   {
-    role: "React/Web Developer-Contract",
+    role: "React Developer-Contract",
     company: "PCEBV",
     period: "Mar 2026 – Present",
     technologies: ["React.js", "PHP", "MySQL", "Vercel", "UI/UX Assembly"],
@@ -112,6 +112,48 @@ export const experiencesData: Experience[] = [
 ];
 
 export const projectsData: Project[] = [
+  {
+  title: "Procurement & Tender Portal Automation System",
+  subtitle: "Workflow automation platform for procurement operations",
+  technologies: [
+    "Python",
+    "Playwright",
+    "Browser Automation",
+    "Workflow Automation",
+    "Audit Logging",
+    "File Management"
+  ],
+  description: [
+    "Developed a custom procurement workflow automation platform that streamlines opportunity tracking, document retrieval, file organization, and audit tracking for procurement operations."
+  ],
+  highlights: [
+    "Automated procurement document retrieval and RFx processing workflows, reducing repetitive administrative effort by up to 80%.",
+    "Implemented structured document organization, automated routing, and audit logging to improve operational visibility and consistency.",
+    "Built resilient session management, validation checks, and recovery mechanisms for stable long-term execution.",
+    "Reduced document processing time significantly while enabling procurement teams to focus on bid preparation and opportunity evaluation."
+  ]
+},
+{
+  title: "Lead  & Data Collection Platform",
+  subtitle: "Business discovery and prospect research automation",
+  technologies: [
+    "Python",
+    "Playwright",
+    "Data Processing",
+    "CSV Automation",
+    "Business Intelligence",
+    "Workflow Automation"
+  ],
+  description: [
+    "Built a scalable lead intelligence platform that automates business discovery, prospect research, contact enrichment, and structured data collection workflows."
+  ],
+  highlights: [
+    "Automated company discovery and lead collection workflows across multiple industry categories.",
+    "Reduced lead research activities from hours of manual searching to minutes of automated processing.",
+    "Organized collected records into structured and export-ready datasets for business development teams.",
+    "Reduced dependency on expensive third-party lead generation platforms through local-first automation workflows."
+  ]
+},
   {
     title: "Guardrail API",
     subtitle: "Safe backend checks for automated workflows",
